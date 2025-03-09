@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperpoetry: A Journey</title>
+    <style>
+        body {
+            font-family: 'Georgia', serif;
+            background: url('https://i.pinimg.com/736x/27/86/5c/27865c08105a318dc05474b8b062a8ae.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #ffffff;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            color: #ffdd57;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        p {
+            font-size: 1.4em;
+            line-height: 1.8;
+            max-width: 600px;
+            margin: 20px auto;
+            background: rgba(0, 0, 0, 0.6); /* Keeps text readable */
+            padding: 15px;
+            border-radius: 10px;
+        }
+        a {
+            color: #ffdd57;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease-in-out;
+        }
+        a:hover {
+            color: #ffa500;
+            text-decoration: underline;
+        }
+        .fade {
+            opacity: 0;
+            transition: opacity 2s ease-in-out;
+        }
+        /* Make entire page clickable */
+        .full-page-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <!-- Invisible full-page link -->
+   <a href="https://hyperpoemcsha.com" class="full-page-link" target="_blank"></a>
+
+    <h1>Hyperpoetry: A Journey</h1>
+
+    <p class="fade">
+        In the <a href="https://www.example.com/sunrise" target="_blank">golden sunrise</a>, I find my peace, <br>
+        Drifting with the <a href="https://www.example.com/ocean" target="_blank">waves of time</a> that never cease.
+    </p>
+
+    <p class="fade">
+        A whisper calls from <a href="https://www.example.com/memories" target="_blank">yesterday's dream</a>, <br>
+        Fading like <a href="https://www.example.com/shadows" target="_blank">shadows</a> in the moonlight's gleam.
+    </p>
+
+    <script>
+        // JavaScript for fade-in effect
+        document.addEventListener("DOMContentLoaded", function() {
+            let lines = document.querySelectorAll(".fade");
+            lines.forEach((line, index) => {
+                setTimeout(() => {
+                    line.style.opacity = "1";
+                }, index * 2000);
+            });
+        });
+    </script>
+</body>
+</html>
